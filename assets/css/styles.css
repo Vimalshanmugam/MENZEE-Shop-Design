@@ -88,7 +88,7 @@ a {
   padding: 1.5rem 2rem;
   border-radius: 1rem;
   overflow: hidden;
-  background-color: #ffe8df ;
+  background-color: #ffe8df !important;
 }
 .banner .card__img {
   width: 380px;
