@@ -90,13 +90,32 @@ a {
   overflow: hidden;
   background-color: #ffe8df !important;
 }
-.banner .card__img {
+/* .banner .card__img {
   width: 380px;
 }
-.banner .card__img:hover{
-    transform: scale(1.3);
-    /* transform: rotate(60deg); */
+.banner .card__img::after {
+  content: url(path/to/larger-image.jpg);
+  display: none;
+}
 
+.banner .card__img:hover::after {
+  transform: scale(1.3);
+  /* transform: rotate(60deg); */
+/* } */ 
+.banner .card__img {
+  width: 380px;
+  position: relative;
+  overflow: visible;
+}
+
+.banner .card__img img {
+  width: 100%;
+  height: auto;
+  transition: transform 0.3s ease;
+}
+
+.banner .card__img:hover img {
+  transform: scale(1.3);
 }
 .banner .card__precis {
   width: 20%;
